@@ -5,17 +5,6 @@ library(tidyr)
 library(ggplot2)
 library(scales)
 
-# ------------------------------------------------------------
-# Parameter distribution diagnostics (violin + box + jitter)
-# Reads rolling results (preferred: all_results_v6.rds)
-# Outputs PNG figures by target and parameter family
-#
-# File name: code_emp_roll_param_7.0.R
-# ------------------------------------------------------------
-
-# ---------------------------
-# User configuration
-# ---------------------------
 
 IN_DIR  <- "emp_outputs_roll"
 OUT_DIR <- file.path(IN_DIR, "param_distributions")
@@ -279,3 +268,4 @@ if (!is.null(d_sh) && nrow(d_sh) > 0) {
 }
 
 message("Done. Parameter distribution figures saved to: ", OUT_DIR)
+
