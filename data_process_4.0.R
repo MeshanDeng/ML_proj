@@ -6,7 +6,7 @@ library(tidyr)
 library(ggplot2)
 
 # working directory
-setwd("D:/00.Meishan/UNIBO/04.2nd year/03.MACHINE LEARNING FOR ECONOMISTS/Final project/Final 2 Static Only/Data and Code")
+setwd("------")
 
 file_name  <- "data.xlsx"
 sheet_name <- "data_raw"
@@ -306,3 +306,4 @@ writeData(wb, "data_processed_final", panel_final, startRow = 1, colNames = TRUE
 saveWorkbook(wb, file_name, overwrite = TRUE)
 
 message("Saved sheets: data_predictors, data_target, data_processed_final to workbook: ", file_name)
+
